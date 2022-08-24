@@ -172,6 +172,20 @@ body {
   color: var(--accent-color);
 }
 
+.contacts-item .icon-email {
+  width: 16px;
+  height: 12px;
+  fill: #757575;
+  margin-right: 10px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.icon-email:hover,
+.icon-email:focus {
+  fill: #188ce8;
+}
+
 /* ==============HEADER============= */
 
 /* =============MAIN================ */
@@ -181,6 +195,17 @@ body {
   padding-bottom: 200px;
   background-color: var(--primary-background-color);
   color: var(--other-color);
+}
+
+.overlay {
+  width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/baner-img.jpg');
+  background-position: center;
+  background-size: cover;
 }
 
 .page-baner {
@@ -244,6 +269,22 @@ body {
   width: 270px;
 }
 
+.icon-benefits {
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+}
+
+.benefits-icon-group {
+  margin-bottom: 30px;
+  padding: 20px 100px;
+  border-radius: 4px;
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+}
+
 .benefits-subtitle {
   margin-bottom: 10px;
   font-weight: var(--primry-font-weight);
@@ -304,10 +345,14 @@ body {
 .workers-item {
   background-color: var(--other-color);
   width: 270px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
 }
 
 .team-subtitle {
-  padding: 30px 0px;
+  margin-top: 30px;
+  margin-bottom: 16px;
 }
 
 .workers-name {
@@ -326,7 +371,75 @@ body {
   text-align: center;
 }
 
+.team-svg {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+}
+
+.team-svg:hover {
+  fill: #fff;
+}
+
+.team-link-list {
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  padding-bottom: 30px;
+}
+
+.team-link-list li {
+  width: 44px;
+  height: 44px;
+}
+
+.team-link-list li:not(:last-child) {
+  margin-right: 10px;
+}
+.team-link-list a {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-link-list a:hover {
+  background-color: #2196f3;
+  border-radius: 50%;
+}
+
 /* ============OUR TEAM============== */
+
+/* =============REGULAR============== */
+
+.regular-customers .customers-caption {
+  font-family: var(--main-font-family);
+  font-weight: var(--primry-font-weight);
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.castomers-list {
+  display: inline-flex;
+}
+
+.castomers-list-item {
+  width: 170px;
+  height: 92px;
+}
+
+.castomers-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* =============REGULAR============== */
 
 /* =============FOOTER================ */
 
