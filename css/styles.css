@@ -162,6 +162,13 @@ body {
   font-weight: 500;
 }
 
+.header-contacts-email,
+.header-contacts-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .header-contacts-email:hover,
 .header-contacts-email:focus {
   color: var(--accent-color);
@@ -177,13 +184,18 @@ body {
   height: 12px;
   fill: #757575;
   margin-right: 10px;
-  display: inline-flex;
-  align-items: center;
 }
 
 .icon-email:hover,
 .icon-email:focus {
   fill: #188ce8;
+}
+
+.contacts-item .icon-smartphone {
+  width: 10px;
+  height: 16px;
+  fill: #757575;
+  margin-right: 10px;
 }
 
 /* ==============HEADER============= */
@@ -422,6 +434,7 @@ body {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
 }
 
 .castomers-list {
@@ -429,14 +442,27 @@ body {
 }
 
 .castomers-list-item {
-  width: 170px;
-  height: 92px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.customers-list-item:hover,
+.customers-list-item:focus {
+  border-color: #2196f3;
+}
+
+.castomers-list-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .castomers-link {
   display: flex;
   justify-content: center;
   align-items: center;
+  /* outline: 1px solid tomato; */
+  /* border: 1px solid #afb1b8;
+  border-radius: 4px; */
 }
 
 /* =============REGULAR============== */
@@ -550,12 +576,20 @@ body {
 .services-nav-button:focus {
   background-color: var(--accent-color);
   color: var(--other-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .services-list {
   flex-wrap: wrap;
   column-gap: 30px;
   gap: 30px;
+}
+
+.services-item:hover,
+.services-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .desc {
