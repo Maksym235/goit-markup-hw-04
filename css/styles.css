@@ -221,6 +221,7 @@ body {
   height: 600px;
   margin-left: auto;
   margin-right: auto;
+  background-color: #c4c4c4;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url('../images/baner-img.jpg');
   background-position: center;
@@ -482,7 +483,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-content: flex-start;
 }
 
@@ -534,6 +535,12 @@ body {
 .footer-contacts-number:hover,
 .footer-contacts-number:focus {
   color: var(--accent-color);
+}
+
+.sdudio-social-group {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .studio-link-list {
