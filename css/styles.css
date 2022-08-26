@@ -480,11 +480,20 @@ body {
 }
 
 .footer-content {
-  margin-left: auto;
   margin-right: auto;
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-content-address {
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: flex-start;
+}
+
+.footer-content-link {
+  margin-left: 70px;
 }
 
 .logo-footer {
@@ -558,6 +567,8 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+
+  margin-bottom: 10px;
 }
 
 .studio-link {
@@ -579,10 +590,6 @@ body {
   width: 20px;
   height: 20px;
   fill: #ffffff;
-}
-
-.ffff {
-  display: flex;
 }
 
 /* ===========FOOTER=========== */
